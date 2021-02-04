@@ -1,9 +1,37 @@
+@font-face {
+  font-family: Biela Regular;
+  src: url(../public/assets/Biela-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Biela Bold;
+  src: url(../public/assets/Biela-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Biela Medium;
+  src: url(../public/assets/Biela-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: Koga Sans Regular;
+  src: url(../public/assets/KogaSansText-Book.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Koga Sans Bold;
+  src: url(../public/assets/KogaSansText-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Koga Sans Medium;
+  src: url(../public/assets/KogaSansText-Medium.woff2) format("woff2");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Koga Sans Medium', sans-serif;
 }
 
 a {

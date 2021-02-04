@@ -11,7 +11,7 @@ const Footer = () => (
             <svg version="1.1" className="footer__symbol" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 74 70" xmlSpace="preserve">
 <g>
-	<path class="st0" d="M0.158,44.106l21.285-9.162l2.607,1.339l2.609-8.88l18.113-8.175l3.452,8.175l7.894-27.345L73.949,18.1
+	<path className="st0" d="M0.158,44.106l21.285-9.162l2.607,1.339l2.609-8.88l18.113-8.175l3.452,8.175l7.894-27.345L73.949,18.1
 		L59.925,70.253L41.036,58.695l-4.581-10.713l-2.043,7.33l-6.908-3.735H6.854L0.158,44.106z"/>
 </g>
 </svg>
@@ -37,7 +37,7 @@ width: 100%;
 padding: 84px 0;
 background-color: #0B4D58;
 .footer{
-  font-family: 'Koga Sans Regular', sans-serif;
+  font-family: 'Koga Sans Medium', sans-serif;
   &__symbol{
     fill: #F5C51D;
     height: 50px;

@@ -12,6 +12,7 @@
   font-family: Biela Medium;
   src: url(../public/assets/Biela-Medium.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Koga Sans Regular;
   src: url(../public/assets/KogaSansText-Book.woff2) format("woff2");
@@ -26,12 +27,16 @@
   font-family: Koga Sans Medium;
   src: url(../public/assets/KogaSansText-Medium.woff2) format("woff2");
 }
+@font-face {
+  font-family: Koga Sans Semi Bold;
+  src: url(../public/assets/KogaSansText-SemiBold.woff2) format("woff2");
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Koga Sans Medium', sans-serif;
+  font-family: 'Koga Sans Regular', TazuganeGothicStdN-Regular, sans-serif;
 }
 
 a {

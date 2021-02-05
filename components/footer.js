@@ -5,8 +5,8 @@ import Container from '../components/container'
 const Footer = () => (
   <StyledFooter>
     <Container>
-      <div className="row">
-        <div className='column column-80 column-offset-10'>
+      <div className="columns is-centered">
+        <div className='column is-10'>
           <div className='footer'>
             <svg version="1.1" className="footer__symbol" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 74 70" xmlSpace="preserve">

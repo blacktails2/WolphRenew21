@@ -1,16 +1,24 @@
 import Link from 'next/link';
 import styled from 'styled-components'
 import Container from '../components/container'
+import Image from 'next/image'
 
 const Menus = () => (
   <StyledMenus>
     <Container>
-      <div className="menus">
+      <div className="menus columns">
         <div className="column"></div>
         <div className="column">
-          <Link href='/'>
-            <a><img className='menus__logotype' src='../assets/logotype.svg' alt='Wolph.designのホームに戻る' /></a>
-          </Link>
+          <div className="menus__logotype">
+            <Link href='/'>
+              <a><Image
+                src='/assets/logotype.svg'
+                alt='Wolph.designのホームに戻る'
+                width={250}
+                height={100}
+              /></a>
+            </Link>
+          </div>
         </div>
         <div className="column menus__links">
           <Link href='/'>
@@ -34,20 +42,12 @@ const StyledMenus = styled.div`
 padding-top: 70px;
 width: 100%;
 .menus{
-  display: flex;
-  justify-content: space-between;
-  .column{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-  }
   &__logotype{
-    width: 250px;
-    margin: 0 auto;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   &__links{
-    margin-top: 22px;
+    margin-top: 32px;
     text-align: right;
   }
 }

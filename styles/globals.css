@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: Koga Sans Regular;
-  src: url(../public/assets/KogaSansText-Book.woff2) format("woff2");
+  src: url(../public/assets/KogaSansText-WebBook.woff2) format("woff2");
 }
 
 @font-face {
@@ -36,8 +36,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Koga Sans Regular', TazuganeGothicStdN-Regular, sans-serif;
+  font-family: 'Koga Sans Regular', TazuganeGothicStdN-Book, sans-serif;
 }
+
 
 a {
   color: inherit;

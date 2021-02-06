@@ -2,6 +2,9 @@ import Link from 'next/link';
 import styled from 'styled-components'
 import Container from '../components/container'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+
+
 
 const Menus = () => (
   <StyledMenus>

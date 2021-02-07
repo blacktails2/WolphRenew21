@@ -1,8 +1,7 @@
-import Link from 'next/link';
+import Link from '../components/activelink';
 import styled from 'styled-components'
 import Container from '../components/container'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 
 
@@ -24,13 +23,13 @@ const Menus = () => (
           </div>
         </div>
         <div className="column menus__links">
-          <Link href='/'>
+          <Link activeClassName='active' href='/'>
             <a className='linktext'>Works</a>
           </Link>
-          <Link href='/about'>
+          <Link activeClassName='active' href='/about'>
             <a className='linktext'>About</a>
           </Link>
-          <Link href='/blog'>
+          <Link activeClassName='active' href='/blog'>
             <a className='linktext'>Blog</a>
           </Link>
         </div>
@@ -63,6 +62,16 @@ width: 100%;
     position: relative;
     font-family: 'Koga Sans Medium', sans-serif;
     z-index: 2;
+    &.active{
+      color: #0B4D58;
+      background-color: transparent;
+      &:before{
+        left: 0%;
+        right: auto;
+        width: 100%;
+        transform: translateY(-50%) skewY(-10deg);
+      }
+    }
     &:hover{
       color: #0B4D58;
       background-color: transparent;

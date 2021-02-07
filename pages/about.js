@@ -123,7 +123,7 @@ export default function About() {
                   </div>
                   <div className='column is-7'>
                     <p className='introduce__body'>
-                      <a className='introduce__body--link'>contact@wolph.design (click to copy)</a>
+                      <a className='introduce__body--link' href='contact@wolph.design'>contact @ wolph.design</a>
                     </p>
                   </div>
                 </div>

@@ -25,13 +25,13 @@ const Menus = () => (
         </div>
         <div className="column menus__links">
           <Link activeClassName='active' href='/'>
-            <a className='linktext'>Works</a>
+            <a className='linktext'><div className='linktext--box'>Works</div></a>
           </Link>
           <Link activeClassName='active' href='/about'>
-            <a className='linktext'>About</a>
+            <a className='linktext'><div className='linktext--box'>About</div></a>
           </Link>
           <Link activeClassName='active' href='/blog'>
-            <a className='linktext'>Blog</a>
+            <a className='linktext'><div className='linktext--box'>Blog</div></a>
           </Link>
         </div>
       </div>
@@ -67,6 +67,7 @@ height: 170px;
     position: relative;
     font-family: 'Koga Sans Medium', sans-serif;
     z-index: 2;
+    transform: skewY(-10deg);
     &.active{
       color: #0B4D58;
       background-color: transparent;
@@ -74,7 +75,7 @@ height: 170px;
         left: 0%;
         right: auto;
         width: 100%;
-        transform: translateY(-50%) skewY(-10deg);
+        transform: translateY(-50%);
       }
     }
     &:hover{
@@ -84,7 +85,7 @@ height: 170px;
         left: 0%;
         right: auto;
         width: 100%;
-        transform: translateY(-50%) skewY(-10deg);
+        transform: translateY(-50%);
       }
     }
     &:before{
@@ -99,7 +100,10 @@ height: 170px;
       color: #000 !important;
       background: #F5C51D;
       transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-      transform: translateY(-50%) skewY(-10deg);
+      transform: translateY(-50%);
+    }
+    &--box{
+      transform: skewY(10deg);
     }
   }
 `;

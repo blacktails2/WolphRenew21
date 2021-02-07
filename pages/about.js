@@ -13,7 +13,6 @@ export default function About() {
         <title>Wolph</title>
         <link rel="icon" href="/favicon.ico" />
       </>
-        <Menus />
         <StyledAbout>
           <Container>
             <div className='about'>
@@ -178,7 +177,6 @@ export default function About() {
             </div>
           </Container>
         </StyledAbout>
-      <Footer />
       </Layout>
   )
 }

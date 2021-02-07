@@ -7,8 +7,9 @@ import Image from 'next/image'
 
 const Menus = () => (
   <StyledMenus>
+    <div className="menus">
     <Container>
-      <div className="menus columns">
+      <div className="columns">
         <div className="column"></div>
         <div className="column">
           <div className="menus__logotype">
@@ -34,16 +35,20 @@ const Menus = () => (
           </Link>
         </div>
       </div>
-    </Container>
+      </Container>
+      </div>
   </StyledMenus>
 );
 
 export default Menus
 
 const StyledMenus = styled.div`
-padding-top: 70px;
 width: 100%;
+height: 170px;
 .menus{
+  width: 100%;
+  top: 70px;
+  position: fixed;
   &__logotype{
     display: flex;
     justify-content: center;

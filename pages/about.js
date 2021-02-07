@@ -122,7 +122,7 @@ export default function About() {
                   </div>
                   <div className='column is-7'>
                     <p className='introduce__body'>
-                      <a className='introduce__body--link' href='contact@wolph.design'>contact @ wolph.design</a>
+                      TwitterのDMもしくはMessengerからご連絡ください。
                     </p>
                   </div>
                 </div>
@@ -135,7 +135,8 @@ export default function About() {
                     <p className='introduce__body'>
                     <a className='introduce__body--link' href='https://twitter.com/wolphtype'>Twitter: @wolphtype</a><br />
                     <a className='introduce__body--link' href='https://www.instagram.com/wolphtype/'>Instagram: wolphtype</a><br />
-                    <a className='introduce__body--link' href='https://dribbble.com/Wolphtype'>Dribbble: Masaki Ando</a>
+                    <a className='introduce__body--link' href='https://dribbble.com/Wolphtype'>Dribbble: Masaki Ando</a><br/>
+                    <a className='introduce__body--link' href='https://m.me/kuro.masaki.ando/'>Messenger: Masaki Ando</a>
                     </p>
                   </div>
               </div>

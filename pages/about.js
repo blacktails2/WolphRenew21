@@ -6,13 +6,43 @@ import Footer from '../components/footer'
 import Container from '../components/container'
 import Image from 'next/image'
 
+const carriers = [
+  { year: '1998. 01', detail: 'Born in Gifu, Japan.' },
+  { year: '2018. 03', detail: 'Guraduated from Department of Design, Salesian Polytechnic' },
+  { year: '2018. 09–', detail: 'The MG School of Latin Calligraphy' },
+  { year: '2018. 10–2019. 03', detail: 'Part-time at teamLab Inc. as a Designer.' },
+  { year: '2019. 04–2020. 03', detail: 'Part-time at Nippon Design Center On-screen Creative Division as a Assistant Designer.' },
+  { year: '2020. 03', detail: 'Graduated from Yoshihisa Shirai Seminar, Department of Visual Communication Design, Musashino Art Univ.' },
+  { year: '2020. 04–2021. 03', detail: 'Contract Employee at Nippon Design Center On-screen Creative Division as a Designer.' },
+  { year: '2021. 04–Now', detail: 'Freelance Designer, Preparing to Study Abroad.' },
+];
+
+const History = ({ year, detail }) => (
+  <div className='columns is-variable is-8'>
+    <div className='column is-3 is-offset-1'>
+      <h5 className='introduce__subhead'>{year}</h5>
+    </div>
+    <div className='column is-7'>
+      <p className='introduce__body'>{detail}</p>
+    </div>
+  </div>
+);
+
+const AboutMe = () => {
+  return (
+  <div>
+    {
+      carriers.map((carrier) => (
+        <History year={carrier.year} detail={carrier.detail} />
+      ))
+      }
+      </div>
+  );
+};
+
 export default function About() {
   return (
-    <Layout>
-      <>
-        <title>Wolph</title>
-        <link rel="icon" href="/favicon.ico" />
-      </>
+    <Layout title="About">
         <StyledAbout>
           <Container>
             <div className='about'>
@@ -34,88 +64,8 @@ export default function About() {
                   </div>
                 </div>
                 <div className="introduce__space"></div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>1998.01</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Born in Gifu, Japan.
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2018.03</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Graduated from Department of Design, Salesian Polytechnic
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2018.09–</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      The MG School of Latin Calligraphy
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2018.10–2019.03</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Part-time at teamLab Inc. as a Designer.
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2019.04–2020.03</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Part-time at Nippon Design Center On-screen Creative Division as a Assistant Designer.
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2020.03</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                    Graduated from Yoshihisa Shirai Seminar, <br />
-                    Department of Visual Communication Design, Musashino Art Univ.
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2020.04–2021.03</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Contract Employee at Nippon Design Center On-screen Creative Division as a Designer.
-                    </p>
-                  </div>
-                </div>
-                <div className='columns is-variable is-8'>
-                  <div className='column is-3 is-offset-1'>
-                    <h5 className='introduce__subhead'>2021.04–</h5>
-                  </div>
-                  <div className='column is-7'>
-                    <p className='introduce__body'>
-                      Freelance Designer, Preparing to Study Abroad.
-                    </p>
-                  </div>
-              </div>
-              <div className="introduce__space"></div>
+                <AboutMe/>
+                <div className="introduce__space"></div>
                 <div className='columns is-variable is-8'>
                   <div className='column is-3 is-offset-1'>
                     <h5 className='introduce__subhead'>Contact</h5>
@@ -198,31 +148,31 @@ const StyledAbout = styled.div`
 .introduce{
   margin-top: 84px;
   &__head{
-    font-size: 23px;
+    font-size: 24px;
     font-family: 'Koga Sans Medium', sans-serif;
-    line-height: 28px;
+    line-height: 32px;
     @media (min-width:1408px){
-      font-size: 27px;
-      line-height: 32px;
+      font-size: 32px;
+      line-height: 36px;
     }
   }
   &__subhead{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Koga Sans Medium', TazuganeGothicStdN-Medium, sans-serif;
-    line-height: 28px;
+    line-height: 32px;
     font-feature-settings: "tnum";
     @media (min-width:1408px){
-      font-size: 21px;
-      line-height: 32px;
+      font-size: 24px;
+      line-height: 36px;
     }
   }
   &__body{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Koga Sans Regular', TazuganeGothicStdN-Book, sans-serif;
-    line-height:28px;
+    line-height:32px;
     @media (min-width:1408px){
-      font-size: 21px;
-      line-height: 32px;
+      font-size: 24px;
+      line-height: 36px;
     }
     &--link{
       transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
@@ -253,17 +203,16 @@ const StyledAbout = styled.div`
     }
   }
   &__photo{
-    margin-top: -28px;
+    margin-top: -32px;
     @media (min-width:1408px){
-      font-size: 21px;
-      line-height: 32px;
+      margin-top: -36px;
     }
   }
   &__logo{
     margin-top: 84px;
   }
   &__space{
-    height: 28px;
+    height: 32px;
   }
 }
 `

@@ -3,17 +3,22 @@ import Head from 'next/head'
 import Menus from '../components/menus'
 import Footer from '../components/footer'
 
-function Layout({ children }) {
+function Layout(props) {
+  const { title, children } = props
+  const siteTitle = "Wolph"
   return (
   <Home>
-      <Menus/>
-      {children}
-      <Footer/>
+    <Head>
+        <title>{title} « {siteTitle}</title>
+        <link rel='icon' href='/favicon.ico'/>
+    </Head>
+    <Menus/>
+    {children}
+    <Footer/>
   </Home>
   )}
 
 export default Layout
 
 const Home = styled.div`
-background-color: #F0E5D1;
 `;

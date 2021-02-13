@@ -27,6 +27,7 @@
   font-family: Koga Sans Medium;
   src: url(../public/assets/KogaSansText-Medium.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Koga Sans Semi Bold;
   src: url(../public/assets/KogaSansText-SemiBold.woff2) format("woff2");
@@ -39,7 +40,12 @@ body {
   font-family: 'Koga Sans Regular', TazuganeGothicStdN-Book, sans-serif;
   font-feature-settings: 'ss01';
 }
-.column{
+
+:root {
+  background-color: #F0E5D1;
+}
+
+.column {
   padding-top: 0;
   padding-bottom: 0;
 }
